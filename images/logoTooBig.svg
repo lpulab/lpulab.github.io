@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-120 -80 240 160">
+  <defs>
+    <linearGradient id="grad_L" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4DD0E1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ACC1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad_P" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#26A69A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00695C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad_U" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#81C784;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+
+    <rect id="v" x="-0.6" y="-0.6" width="1.2" height="1.2" />
+
+    <g id="cloud">
+      <use xlink:href="#v" x="0" y="0" class="p" style="--d:0s" />
+      <use xlink:href="#v" x="2" y="1" class="p" style="--d:0.1s" />
+      <use xlink:href="#v" x="-2" y="2" class="p" style="--d:0.05s" />
+      <use xlink:href="#v" x="1" y="-2" class="p" style="--d:0.15s" />
+      <use xlink:href="#v" x="-1" y="-1" class="p" style="--d:0.2s" />
+    </g>
+  </defs>
+
+  <style>
+    <![CDATA[
+    text {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-anchor: middle;
+      opacity: 0;
+      animation: fadeIn 2s ease-out forwards;
+      animation-delay: 2.25s; 
+    }
+
+    /* PARTICLE ANIMATION - FASTER FADE */
+    @keyframes swarm {
+      0% {
+        transform: translate(var(--sx), var(--sy)) scale(0.5) rotate(var(--r));
+        opacity: 0;
+      }
+      20% { opacity: 1; }
+      50% { 
+        /* Stay solid until here */
+        transform: translate(0, 0) scale(1) rotate(0);
+        opacity: 1; 
+      }
+      80% { 
+        /* Fade out completely by 80% */
+        transform: translate(0, 0) scale(1) rotate(0);
+        opacity: 0; 
+      }
+      100% {
+         transform: translate(0, 0) scale(1) rotate(0);
+         opacity: 0; 
+      }
+    }
+
+    .p {
+      animation: swarm 3s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+      animation-delay: var(--d); 
+      opacity: 0;
+    }
+    
+    @keyframes showFinalPath { to { opacity: 1; } }
+
+    .final-letter {
+      opacity: 0;
+      /* Letter starts appearing at 1.5s (50% of swarm time) */
+      animation: showFinalPath 0.8s ease-out forwards;
+      animation-delay: 1.5s; 
+    }
+
+    .fill-L { fill: url(#grad_L); }
+    .fill-P { fill: url(#grad_P); }
+    .fill-U { fill: url(#grad_U); }
+    
+    @keyframes fadeIn { to { opacity: 1; } }
+    ]]>
+  </style>
+
+  <g class="fill-L" transform="translate(5, 0)"> 
+    <use xlink:href="#cloud" x="-71" y="-32" style="--sx:-60px; --sy:-60px; --r:45deg" />
+    <use xlink:href="#cloud" x="-71" y="-24" style="--sx:-50px; --sy:-50px; --r:-20deg" />
+    <use xlink:href="#cloud" x="-71" y="-16" style="--sx:-40px; --sy:-40px; --r:90deg" />
+    <use xlink:href="#cloud" x="-71" y="-8"  style="--sx:-30px; --sy:-30px; --r:-45deg" />
+    <use xlink:href="#cloud" x="-71" y="0"   style="--sx:-20px; --sy:-20px; --r:15deg" />
+    <use xlink:href="#cloud" x="-71" y="8"   style="--sx:-10px; --sy:-10px; --r:-60deg" />
+    <use xlink:href="#cloud" x="-71" y="16"  style="--sx:0px;   --sy:0px;   --r:30deg" />
+    
+    <use xlink:href="#cloud" x="-69" y="-30" style="--sx:-55px; --sy:-65px; --r:-10deg" />
+    <use xlink:href="#cloud" x="-69" y="-22" style="--sx:-45px; --sy:-55px; --r:80deg" />
+    <use xlink:href="#cloud" x="-69" y="-14" style="--sx:-35px; --sy:-45px; --r:-30deg" />
+    <use xlink:href="#cloud" x="-69" y="-6"  style="--sx:-25px; --sy:-35px; --r:60deg" />
+    <use xlink:href="#cloud" x="-69" y="2"   style="--sx:-15px; --sy:-25px; --r:-15deg" />
+    <use xlink:href="#cloud" x="-69" y="10"  style="--sx:-5px;  --sy:-15px; --r:45deg" />
+    <use xlink:href="#cloud" x="-69" y="18"  style="--sx:5px;   --sy:-5px;  --r:-90deg" />
+
+    <use xlink:href="#cloud" x="-70" y="-28" style="--sx:-58px; --sy:-62px; --r:25deg" />
+    <use xlink:href="#cloud" x="-70" y="-12" style="--sx:-38px; --sy:-42px; --r:-55deg" />
+    <use xlink:href="#cloud" x="-70" y="4"   style="--sx:-18px; --sy:-22px; --r:10deg" />
+    <use xlink:href="#cloud" x="-70" y="20"  style="--sx:2px;   --sy:-2px;  --r:-70deg" />
+
+    <use xlink:href="#cloud" x="-64" y="20"  style="--sx:10px;  --sy:10px;  --r:45deg" />
+    <use xlink:href="#cloud" x="-56" y="20"  style="--sx:20px;  --sy:20px;  --r:-30deg" />
+    <use xlink:href="#cloud" x="-48" y="20"  style="--sx:30px;  --sy:30px;  --r:90deg" />
+    <use xlink:href="#cloud" x="-60" y="18"  style="--sx:15px;  --sy:5px;   --r:-45deg" />
+    <use xlink:href="#cloud" x="-52" y="18"  style="--sx:25px;  --sy:15px;  --r:60deg" />
+    <use xlink:href="#cloud" x="-46" y="22"  style="--sx:35px;  --sy:25px;  --r:-20deg" />
+  </g>
+
+  <g class="fill-P">
+    <use xlink:href="#cloud" x="-11" y="-32" style="--sx:0px;   --sy:-60px; --r:45deg" />
+    <use xlink:href="#cloud" x="-11" y="-24" style="--sx:5px;   --sy:-50px; --r:-20deg" />
+    <use xlink:href="#cloud" x="-11" y="-16" style="--sx:10px;  --sy:-40px; --r:90deg" />
+    <use xlink:href="#cloud" x="-11" y="-8"  style="--sx:15px;  --sy:-30px; --r:-45deg" />
+    <use xlink:href="#cloud" x="-11" y="0"   style="--sx:20px;  --sy:-20px; --r:30deg" />
+    <use xlink:href="#cloud" x="-11" y="8"   style="--sx:25px;  --sy:-10px; --r:-60deg" />
+    <use xlink:href="#cloud" x="-11" y="16"  style="--sx:30px;  --sy:0px;   --r:15deg" />
+    <use xlink:href="#cloud" x="-11" y="22"  style="--sx:35px;  --sy:10px;  --r:-30deg" />
+
+    <use xlink:href="#cloud" x="-9"  y="-30" style="--sx:2px;   --sy:-55px; --r:-10deg" />
+    <use xlink:href="#cloud" x="-9"  y="-14" style="--sx:12px;  --sy:-35px; --r:50deg" />
+    <use xlink:href="#cloud" x="-9"  y="2"   style="--sx:22px;  --sy:-15px; --r:-70deg" />
+    <use xlink:href="#cloud" x="-9"  y="18"  style="--sx:32px;  --sy:5px;   --r:20deg" />
+
+    <use xlink:href="#cloud" x="-4"  y="-32" style="--sx:40px;  --sy:-60px; --r:60deg" />
+    <use xlink:href="#cloud" x="4"   y="-32" style="--sx:50px;  --sy:-55px; --r:-45deg" />
+    <use xlink:href="#cloud" x="12"  y="-28" style="--sx:60px;  --sy:-50px; --r:30deg" />
+    <use xlink:href="#cloud" x="16"  y="-20" style="--sx:65px;  --sy:-40px; --r:-90deg" />
+    <use xlink:href="#cloud" x="16"  y="-12" style="--sx:65px;  --sy:-30px; --r:45deg" />
+    <use xlink:href="#cloud" x="12"  y="-4"  style="--sx:60px;  --sy:-20px; --r:-15deg" />
+    <use xlink:href="#cloud" x="4"   y="0"   style="--sx:50px;  --sy:-10px; --r:75deg" />
+    <use xlink:href="#cloud" x="-4"  y="0"   style="--sx:40px;  --sy:0px;   --r:-30deg" />
+    
+    <use xlink:href="#cloud" x="12"  y="-16" style="--sx:55px;  --sy:-35px; --r:10deg" /> 
+  </g>
+
+  <g class="fill-U" transform="translate(5, 0)">
+    <use xlink:href="#cloud" x="43" y="-32" style="--sx:50px;  --sy:-70px; --r:-45deg" />
+    <use xlink:href="#cloud" x="43" y="-24" style="--sx:55px;  --sy:-60px; --r:30deg" />
+    <use xlink:href="#cloud" x="43" y="-16" style="--sx:60px;  --sy:-50px; --r:-60deg" />
+    <use xlink:href="#cloud" x="43" y="-8"  style="--sx:65px;  --sy:-40px; --r:90deg" />
+    <use xlink:href="#cloud" x="43" y="0"   style="--sx:70px;  --sy:-30px; --r:-15deg" />
+    <use xlink:href="#cloud" x="43" y="8"   style="--sx:75px;  --sy:-20px; --r:60deg" />
+    
+    <use xlink:href="#cloud" x="47" y="-28" style="--sx:52px;  --sy:-65px; --r:20deg" />
+    <use xlink:href="#cloud" x="47" y="-12" style="--sx:62px;  --sy:-45px; --r:-80deg" />
+    <use xlink:href="#cloud" x="47" y="4"   style="--sx:72px;  --sy:-25px; --r:40deg" />
+
+    <use xlink:href="#cloud" x="76" y="-32" style="--sx:100px; --sy:-70px; --r:45deg" />
+    <use xlink:href="#cloud" x="76" y="-24" style="--sx:105px; --sy:-60px; --r:-30deg" />
+    <use xlink:href="#cloud" x="76" y="-16" style="--sx:110px; --sy:-50px; --r:90deg" />
+    <use xlink:href="#cloud" x="76" y="-8"  style="--sx:115px; --sy:-40px; --r:-45deg" />
+    <use xlink:href="#cloud" x="76" y="0"   style="--sx:120px; --sy:-30px; --r:30deg" />
+    <use xlink:href="#cloud" x="76" y="8"   style="--sx:125px; --sy:-20px; --r:-60deg" />
+
+    <use xlink:href="#cloud" x="74" y="-28" style="--sx:98px;  --sy:-65px; --r:-20deg" />
+    <use xlink:href="#cloud" x="74" y="-12" style="--sx:108px; --sy:-45px; --r:50deg" />
+    <use xlink:href="#cloud" x="74" y="4"   style="--sx:118px; --sy:-25px; --r:-70deg" />
+
+    <use xlink:href="#cloud" x="52" y="14"  style="--sx:80px;  --sy:-10px; --r:15deg" />
+    <use xlink:href="#cloud" x="60" y="20"  style="--sx:90px;  --sy:0px;   --r:-90deg" />
+    <use xlink:href="#cloud" x="68" y="18"  style="--sx:100px; --sy:-5px;  --r:45deg" />
+    <use xlink:href="#cloud" x="74" y="14"  style="--sx:110px; --sy:-10px; --r:-15deg" />
+    <use xlink:href="#cloud" x="62" y="14"  style="--sx:95px;  --sy:-15px; --r:60deg" />
+  </g>
+
+  <path class="final-letter fill-L" transform="translate(5,0)" d="M -74 -35 L -66 -35 L -66 16 L -45 16 L -45 24 L -74 24 Z" />
+  
+  <path class="final-letter fill-P" d="M -14 -35 L 6 -35 Q 20 -35 20 -15 Q 20 5 6 5 L -6 5 L -6 24 L -14 24 Z M -6 -27 L -6 -3 L 6 -3 Q 12 -3 12 -15 Q 12 -27 6 -27 Z" />
+  
+  <path class="final-letter fill-U" transform="translate(5,0)" d="M 41 -35 L 49 -35 L 49 5 Q 49 16 60 16 Q 71 16 71 5 L 71 -35 L 79 -35 L 79 5 Q 79 24 60 24 Q 41 24 41 5 Z" />
+
+  <g transform="translate(5, 45)">
+    <text y="0" fill="#2C3E50" font-size="14" font-weight="bold" letter-spacing="1">Language Processing and Usage Lab</text>
+  </g>
+</svg>
