@@ -12,6 +12,7 @@
   orcid: 0000-0002-8902-0758
   plugin: sources.py
   file: sources.yaml
+  image: /images/LanguageAndCognition_Journal2.png
 - id: doi:10.5070/G60111432
   title: 'A decade of language processing research: Which place for linguistic diversity?'
   authors:
@@ -22,6 +23,7 @@
   orcid: 0000-0002-8902-0758
   plugin: sources.py
   file: sources.yaml
+  image: /images/GlossaPsycho.png
 - id: doi:10.1007/s10936-024-10086-5
   title: 'It costs to exist: Acceptability judgments of the temporal concord of the
     auxiliary verbs you and hui in Taiwan Mandarin'
@@ -33,6 +35,7 @@
   orcid: 0000-0002-8902-0758
   plugin: sources.py
   file: sources.yaml
+  image: /images/JOPR.png
 - id: doi:10.1163/2772_5766_hflo_com_202230
   title: 'Experimental linguistics embracing linguistic diversity: On the contributions
     of Formosan languages to models of sentence processing'
@@ -65,6 +68,7 @@
   orcid: 0000-0002-8902-0758
   plugin: sources.py
   file: sources.yaml
+  image: /images/Concentric_48_2.png
 - id: doi:10.1075/intp.00069.fan
   title: 'When two languages are competing: An ERP study of sentence processing in
     expert and novice interpreters'
@@ -78,6 +82,7 @@
   orcid: 0000-0002-8902-0758
   plugin: sources.py
   file: sources.yaml
+  image: /images/Interpreting.png
 - title: 'Aspect of pasts in Mandarin: An ERP study on the temporal restriction of
     the perfectives -le and -guo'
   publisher: 21st National Conference on Linguistics (NCL-21)
@@ -108,6 +113,7 @@
   orcid: 0000-0002-8902-0758
   plugin: sources.py
   file: sources.yaml
+  image: /images/JNL.jpg
 - title: The temporal constraints of le1 revisited
   publisher: 13th Workshop on Formal Syntax and Semantics (FOSS-13)
   date: '2022-02-11'
