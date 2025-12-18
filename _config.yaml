@@ -1,5 +1,6 @@
 # site properties and page defaults
 title: Language Processing and Usage Lab
+subtitle: 
 description: We aim at understanding how language is used and how it is represented in the mind
 header: images/background.jpg
 logo-text: false
