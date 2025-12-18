@@ -1,9 +1,8 @@
 # site properties and page defaults
 title: Language Processing and Usage Lab
-subtitle: We aim at understanding how language is used and how it is represented in the mind
-description: An engaging 1-3 sentence description of your lab.
+description: We aim at understanding how language is used and how it is represented in the mind
 header: images/background.jpg
-logo-text: true
+logo-text: false
 footer: images/background.jpg
 proofer: false
 
