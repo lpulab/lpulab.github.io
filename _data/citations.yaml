@@ -220,92 +220,66 @@
   orcid: 0000-0002-4655-3773
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1098/rsif.2017.0387
-  title: Opportunities and obstacles for deep learning in biology and medicine
+- id: doi:10.1007/s10936-024-10086-5
+  title: 'It Costs To Exist: Acceptability Judgments of the Temporal Concord of the
+    Auxiliary Verbs You and Hui in Taiwan Mandarin'
   authors:
-  - Travers Ching
-  - Daniel S. Himmelstein
-  - Brett K. Beaulieu-Jones
-  - Alexandr A. Kalinin
-  - Brian T. Do
-  - Gregory P. Way
-  - Enrico Ferrero
-  - Paul-Michael Agapow
-  - Michael Zietz
-  - Michael M. Hoffman
-  - Wei Xie
-  - Gail L. Rosen
-  - Benjamin J. Lengerich
-  - Johnny Israeli
-  - Jack Lanchantin
-  - Stephen Woloszynek
-  - Anne E. Carpenter
-  - Avanti Shrikumar
-  - Jinbo Xu
-  - Evan M. Cofer
-  - Christopher A. Lavender
-  - Srinivas C. Turaga
-  - Amr M. Alexandari
-  - Zhiyong Lu
-  - David J. Harris
-  - Dave DeCaprio
-  - Yanjun Qi
-  - Anshul Kundaje
-  - Yifan Peng
-  - Laura K. Wiley
-  - Marwin H. S. Segler
-  - Simina M. Boca
-  - S. Joshua Swamidass
-  - Austin Huang
-  - Anthony Gitter
-  - Casey S. Greene
-  publisher: Journal of The Royal Society Interface
-  date: '2018-04-01'
-  link: https://doi.org/gddkhn
+  - Aymeric Collart
+  publisher: Journal of Psycholinguistic Research
+  date: '2024-05-07'
+  link: https://doi.org/g8n8tg
   plugin: sources.py
   file: sources.yaml
-- id: pubmed:29424689
-  title: Sci-Hub provides access to nearly all scholarly literature.
+- id: doi:10.5070/G60111432
+  title: 'A decade of language processing research: Which place for linguistic diversity?'
   authors:
-  - Daniel S Himmelstein
-  - Ariel Rodriguez Romero
-  - Jacob G Levernier
-  - Thomas Anthony Munro
-  - Stephen Reid McLaughlin
-  - Bastian Greshake Tzovaras
-  - Casey S Greene
-  publisher: eLife
-  date: '2018-03-01'
-  link: https://www.ncbi.nlm.nih.gov/pubmed/29424689
+  - Aymeric Collart
+  publisher: Glossa Psycholinguistics
+  date: '2024-06-24'
+  link: https://doi.org/hbf4cp
   plugin: sources.py
   file: sources.yaml
-- id: pmc:PMC5640425
-  title: Systematic integration of biomedical knowledge prioritizes drugs for repurposing
+- id: doi:10.1017/langcog.2023.49
+  title: Past and future time reference processing teased apart in Paiwan, an endangered
+    Formosan language
   authors:
-  - Daniel Scott Himmelstein
-  - Antoine Lizee
-  - Christine Hessler
-  - Leo Brueggeman
-  - Sabrina L Chen
-  - Dexter Hadley
-  - Ari Green
-  - Pouya Khankhanian
-  - Sergio E Baranzini
-  publisher: eLife
-  date: '2017-09-22'
-  link: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5640425/
+  - Aymeric Collart
+  - Elizabeth Zeitoun
+  publisher: Language and Cognition
+  date: '2023-10-20'
+  link: https://doi.org/hbf4cq
   plugin: sources.py
   file: sources.yaml
-- id: arxiv:1806.05726
-  title: Generalization of the Fermi Pseudopotential
+- id: doi:10.1075/consl.21046.col
+  title: "Expressing the existence of an event with \u2018<i>you</i>(to have) +\_\
+    VP\u2019 in Taiwan Mandarin"
   authors:
-  - Trang T. Le
-  - Zach Osman
-  - D. K. Watson
-  - Martin Dunn
-  - B. A. McKinney
-  publisher: arXiv
-  date: '2019-05-01'
-  link: https://arxiv.org/abs/1806.05726
+  - Aymeric Collart
+  - Hung-Kuan Su
+  publisher: Concentric. Studies in Linguistics
+  date: '2022-11-29'
+  link: https://doi.org/hbf4cr
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1075/intp.00069.fan
+  title: When two languages are competing
+  authors:
+  - Damien Chiaming Fan
+  - Aymeric Collart
+  - Shiao-hui Chan
+  publisher: Interpreting. International Journal of Research and Practice in Interpreting
+  date: '2021-11-16'
+  link: https://doi.org/hbf4cs
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1016/j.jneuroling.2021.100998
+  title: 'Processing past time reference in a tenseless language: An ERP study on
+    the Mandarin aspectual morphemes -le and -guo'
+  authors:
+  - Aymeric Collart
+  - Shiao-hui Chan
+  publisher: Journal of Neurolinguistics
+  date: '2021-08-01'
+  link: https://doi.org/gq9hjg
   plugin: sources.py
   file: sources.yaml
