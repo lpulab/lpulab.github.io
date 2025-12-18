@@ -1,14 +1,11 @@
 ---
-name: Jane Smith
+name: Aymeric Collart 理克
 image: images/photo.jpg
 role: principal-investigator
-affiliation: University of Colorado
-aliases:
-  - J. Smith
-  - J Smith
+affiliation: Department of Chinese, National Taiwan Normal University
 links:
-  home-page: https://janesmith.com
-  orcid: 0000-0001-8713-9213
+  home-page: https://aymeric-collart.github.io/
+  orcid: 0000-0002-8902-0758
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
