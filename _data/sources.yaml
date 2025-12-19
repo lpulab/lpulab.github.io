@@ -1,5 +1,5 @@
 - id: doi:10.1007/s10936-024-10086-5
-  title: "It costs to exist: Acceptability judgments of the temporal concord of the auxiliary verbs you and hui in Taiwan Mandarin"
+  title: "It costs to exist: Acceptability judgments of the temporal concord of the auxiliary verbs <i>you</i> and <i>hui</i> in Taiwan Mandarin"
   image: /images/JOPR.png
 - id: doi:10.5070/G60111432
   image: /images/GlossaPsycho.png
@@ -20,4 +20,7 @@
   authors: Aymeric Collart
   date: 2024-01-02
   publisher: "Handbook of Formosan languages: The indigenous languages of Taiwan"
+  
+- title: "When Time is a Fact: A Semantic and Time-Relational Analysis of ‘You + VP’ in Taiwan Mandarin"
+  remove: true
 # ...more sources
