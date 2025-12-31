@@ -1,47 +1,34 @@
-- title: Cool Dataset
-  subtitle: a subtitle
-  group: featured
+- title: "Examining and tracking the use of non-standard aspect and modal markers in Taiwan Mandarin: Morphosyntactic, semantic and register analyses"
+  subtitle: NSTC project (2025/12-2027/11)
+  group: Projects
   image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  description: "Research project focusing on the use of Taiwanese Mandarin grammatical markers (the auxiliary verb 'you' and the sentence-final 'guo') from a morphosyntactic and sociolinguistic perspective, using methods from corpus linguistics" 
   tags:
-    - resource
+    - Projects
 
-- title: Cool Package
-  subtitle: a subtitle
-  group: featured
+- title: "On the validation of the use of wireless EEG systems for neurolinguistic research: A replication study of a grammatical ERP experiment"
+  subtitle: NTNU project (2026)
+  group: Projects
   image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  size: full
+  description: "Research project focusing on the evaluation of wireless EEG systems for neurolinguistic research."
   tags:
-    - resource
+    - Projects
 
-- title: Cool Tutorial
+- title: "Diversity in language processing conferences: A survey"
   subtitle: a subtitle
   image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  group: Resources
+  link: https://aymeric-collart.shinyapps.io/shinyapps_langconfdata_dashboard/
+  description: "This survey investigates the linguistic diversity in language processing conferences, from 2012 to 2024. This is the companion website including follow-up data of the article A decade of language processing research: Which place for linguistic diversity?."
   tags:
-    - resource
-    - publication
+    - Resources
 
-- title: Cool Web App
+- title: "Corpus linguistics: Web scraping and data analyses"
   subtitle: a subtitle
+  group: Tutorials
   image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  link: https://aymeric-collart.github.io/CHU0387/
+  description: Introductory tutorial to web scraping and simple analyses of corpus data (Course CHU03887)
   tags:
-    - software
-
-- title: Cool Web Server
-  subtitle: a subtitle
-  image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
-  tags:
-    - software
+    - Tutorials

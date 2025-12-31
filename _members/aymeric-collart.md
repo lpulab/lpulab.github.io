@@ -1,6 +1,6 @@
 ---
 name: Aymeric Collart (理克)
-image: images/photo.jpg
+image: images/aymeric-collart.jpg
 aliases:
 - Aymeric Collart
 - 理克
