@@ -1,10 +1,134 @@
 # EDIT MANUALLY
 
-- id: ""
+- id: " "
+  title: 'Judging temporal concord in Tagalog and cross-linguistic comparisons'
+  publisher: "The 2025 conference on the Mosaic of East Asian Language Processing: Exploring Taiwan's diversity and beyond (MEALP 2025)"
+  date: '2025-11-07'
+  authors:
+  - Aymeric Collart
+  - Rowena Garcia
+  - Dave Kenneth Cayad
+  link: https://sites.google.com/view/mealp-2025/home?authuser=0
+
+- id: " "
+  title: 'Temporal concord in Formosan languages in a comparative perspective'
+  publisher: "The 2025 conference on the Mosaic of East Asian Language Processing: Exploring Taiwan's diversity and beyond (MEALP 2025)"
+  date: '2025-11-07'
+  authors: Aymeric Collart
+  link: https://sites.google.com/view/mealp-2025/home?authuser=0
+
+- id: " "
+  title: 'Conducting field-based psycholinguistic research on Formosan languages as an outsider'
+  publisher: "The 2025 conference on the Mosaic of East Asian Language Processing: Exploring Taiwan's diversity and beyond (MEALP 2025)"
+  date: '2025-11-07'
+  authors: Aymeric Collart
+  link: https://sites.google.com/view/mealp-2025/home?authuser=0
+
+- id: " "
+  title: 'In the clouds and on the ground: Taiwan as a laboratory to expand the typological pool of psycholinguistic research'
+  publisher: Linguistic data and language comparison in light of the 'quantitative turn' and 'big data' - a workshop and symposium
+  date: '2025-05-07'
+  authors: Aymeric Collart
+  link: https://www.isw.unibe.ch/research/workshops/linguistic_data_and_language_comparison/index_eng.html
+
+- id: " "
+  title: '"Computer or smartphone, as you please": On the device effect in web-based acceptability judgment experiments'
+  publisher: 5th International Conference on Theoretical East Asian Psycholinguistics (ICTEAP-5)
+  date: '2025-04-17'
+  authors: Aymeric Collart
+  link: https://smartconf.jp/content/icteap5/
+
+- id: " "
+  title: 'A tale of the lab and the field: An opportunity for Formosan language research'
+  publisher: "5th World Congress of Taiwan Studies (Taiwan in a changing world: Past, present, and future)"
+  date: '2025-05-21'
+  authors: Aymeric Collart
+  link: https://wctsv.project.sinica.edu.tw/english/english_index.html
+
+- id: " "
+  title: 'Mind your language and your cues when judging the past'
+  publisher: 15th Workshop on Formal Syntax and Semantics (FOSS-15)
+  date: '2024-10-12'
+  authors: Aymeric Collart
+  link: https://www.eng.ntnu.edu.tw/index.php/2024/10/08/foss-15-15th-work-shop-on-formal-syntax-and-semantics/
+
+- id: " "
+  title: 'Judging past time reference across languages: A Competition Model perspective'
+  publisher: 30th Architectures and Mechanisms for Language Processing (AMLaP 30)
+  date: '2024-09-05'
+  authors: Aymeric Collart
+  link: https://amlap2024.ed.ac.uk/
+
+- id: " "
+  title: 'Quantitative explorations of regional grammatical variations: The case of you ‘to have’ in Taiwan Mandarin'
+  publisher: Crosslinguistic Perspectives on Processing and Learning Workshop 2024 (X-PPL 2024)
+  date: '2024-09-02'
+  authors: Aymeric Collart
+  link: https://www.isle.uzh.ch/en/events/x-ppl2024.html
+
+- id: " "
+  title: 'Existing in the future depends on who you are and what you do: Acceptability judgments of ‘you (to have) + VP’ in Taiwan Mandarin'
+  publisher: Japanese Society for Language Sciences 25th Annual International Conference (JSLS 25)
+  date: '2024-07-12'
+  authors: Aymeric Collart
+  link: https://jslsconference.jpn.org/jsls2024/
+
+- id: " "
+  title: 'Neurotypological considerations of temporal concord processing'
+  publisher: Crosslinguistic Perspectives on Processing and Learning Workshop 2023 (X-PPL 2023)
+  date: '2023-11-06'
+  authors: Aymeric Collart
+  link: https://www.isle.uzh.ch/en/events/x-ppl2023.html
+
+- id: " "
+  title: 'Processing temporal concord and modality: A self-paced reading study on you and hui in Taiwan Mandarin'
+  publisher: 29th Architectures and Mechanisms for Language Processing (AMLaP 29)
+  date: '2023-08-31'
+  authors: Aymeric Collart
+  link: https://www.bcbl.eu/events/amlap/en/
+
+- id: " "
+  title: 'Ten years of linguistic diversity in language processing conferences'
+  publisher: 29th Architectures and Mechanisms for Language Processing (AMLaP 29)
+  date: '2023-08-31'
+  authors: Aymeric Collart
+  link: https://www.bcbl.eu/events/amlap/en/
+
+- id: " "
+  title: 'Planning or not planning: Interplay between future time adverb and aspect markers/modal construction in (Taiwan) Mandarin'
+  publisher: Workshop on Theoretical East Asian Linguistics 13 (TEAL-13)
+  date: '2023-05-12'
+  authors: Aymeric Collart
+  link: https://sites.google.com/ntnueng.tw/teal13/home
+
+- id: " "
+  title: 'Existing in time has a cost: A judgment acceptability study on the temporal concord processing of the auxiliary verbs you and hui in Taiwan Mandarin'
+  publisher: 36th Annual Conference on Human Sentence Processing (HSP-2023)
+  date: '2023-03-09'
+  authors: Aymeric Collart
+  link: https://lrdc.pitt.edu/HSP2023/
+
+- id: " "
+  title: 'Processing past time reference, but which one? An ERP study on the Mandarin Chinese morphemes guo1 and guo2 with definite and indefinite time adverbs'
+  publisher: 28th Architectures and Mechanisms for Language Processing (AMLaP 28)
+  date: '2022-10-06'
+  authors: Aymeric Collart
+  link: https://le-2022.sciencesconf.org/
+  
+- id: " "
+  title: 'Processing past time reference is harder than future time reference: Evidence from Paiwan, a mood-prominent language'
+  publisher: 28th Architectures and Mechanisms for Language Processing (AMLaP 28)
+  date: '2022-09-07'
+  authors:
+  - Aymeric Collart
+  - Elizabeth Zeitoun
+  link: https://amlap2022.york.ac.uk/
+- id: " "
   title: 'Aspect of pasts in Mandarin: An ERP study on the temporal restriction of
     the perfectives -le and -guo'
   publisher: 21st National Conference on Linguistics (NCL-21)
-  date: '2020-10-01'
+  date: '2020-11-14'
+  authors: Aymeric Collart
   link: https://sites.google.com/g-mail.nsysu.edu.tw/ncl2020lst/home
   orcid: 0000-0002-8902-0758
   plugin: orcid.py
@@ -15,7 +139,10 @@
     -guo'
   publisher: 3rd International Conference on Theoretical East Asian Psycholinguistics
     (ICTEAP-3)
-  date: '2022-02-11'
+  date: '2021-03-13'
+  authors:
+  - Aymeric Collart
+  - Shiaohui Chan
   link: https://sites.google.com/view/icteap-3/home
   orcid: 0000-0002-8902-0758
   plugin: orcid.py
@@ -23,7 +150,8 @@
 - id: " "
   title: The temporal constraints of le1 revisited
   publisher: 13th Workshop on Formal Syntax and Semantics (FOSS-13)
-  date: '2022-02-11'
+  date: '2020-10-16'
+  authors: Aymeric Collart
   link: https://sites.google.com/view/foss-13/%E9%A6%96%E9%A0%81-home
   orcid: 0000-0002-8902-0758
   plugin: orcid.py
@@ -32,7 +160,10 @@
   title: 'Not all the pasts are the same: An ERP study of the temporal constraints
     of the Mandarin aspectual markers -le and -guo'
   publisher: 33rd CUNY Conference on Human Sentence Processing (CUNY-33)
-  date: '2022-02-11'
+  date: '2020-03-19'
+  authors:
+  - Aymeric Collart
+  - Shiaohui Chan
   link: https://blogs.umass.edu/cuny2020/
   orcid: 0000-0002-8902-0758
   plugin: orcid.py
@@ -41,7 +172,8 @@
   title: 'Temporal relations electrified: An ERP study on the perfective marker -le
     in Mandarin Chinese'
   publisher: 20th National Conference on Linguistics (NCL-20)
-  date: '2022-02-11'
+  date: '2019-10-25'
+  authors: Aymeric Collart
   link: https://sites.google.com/view/ncl2019/home
   orcid: 0000-0002-8902-0758
   plugin: orcid.py
@@ -50,7 +182,10 @@
   title: 'Aspect is distinct from time reference: An ERP study of the perfective marker
     -le in Mandarin Chinese'
   publisher: 32nd CUNY Conference on Human Sentence Processing (CUNY-32)
-  date: '2022-02-11'
+  date: '2019-03-19'
+  authors:
+  - Aymeric Collart
+  - Shiaohui Chan
   link: https://www.colorado.edu/event/cuny2019/
   orcid: 0000-0002-8902-0758
   plugin: orcid.py
@@ -61,7 +196,8 @@
   publisher: "17th International Conference on the Processing of East Asian Languages\
     \ and 9th Conference on Language, Discourse, and Cognition (joint conference ICPEAL\
     \ 17 \u2013 CLDC 9)"
-  date: '2022-02-11'
+  date: '2018-10-19'
+  authors: Aymeric Collart
   link: http://homepage.ntu.edu.tw/~gilntu/icpeal2018cldc/
   orcid: 0000-0002-8902-0758
   plugin: orcid.py
@@ -70,7 +206,8 @@
   title: "When time is a fact: A semantic and time-relational analysis of \u2018<i>you</i>\
     \ + VP\u2019 in Taiwan Mandarin"
   publisher: 19th Chinese Lexical Semantics Workshop (CLSW-19)
-  date: '2018-02-11'
+  authors: Aymeric Collart
+  date: '2018-05-26'
   link: http://www.ccunix.ccu.edu.tw/~lngwujs/CLSW2018/English/clsw2018_eng.html
   orcid: 0000-0002-8902-0758
   plugin: orcid.py
