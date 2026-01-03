@@ -30,7 +30,7 @@ Maybe the most straightforward way to understand our researsh is to browse throu
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/OurResearch.svg"
   link="research"
   title="Our Research"
   text=text
@@ -54,9 +54,9 @@ We are also committed to open science. You can find nore resources there, includ
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/OurProjects.svg"
   link="projects"
-  title="Our projects and more"
+  title="Our Projects and More"
   flip=true
   style="bare"
   text=text
@@ -79,7 +79,7 @@ This is the team of the LPU lab, click here to know more about us!
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/OurTeam.svg"
   link="team"
   title="Our Team"
   text=text
