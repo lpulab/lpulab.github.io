@@ -7,6 +7,10 @@ We aim at understanding how language is used and how it is represented in the mi
 
 {% include section.html %}
 
+## News
+{% include alert.html type="info" content="**03 Jan 2026:** The website of the LPU lab has been launched!" %}
+
+
 ## Highlights
 
 {% capture text %}

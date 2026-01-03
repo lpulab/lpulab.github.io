@@ -16,16 +16,16 @@
     - Projects
 
 - title: "Diversity in language processing conferences: A survey"
-  subtitle: a subtitle
+  #subtitle: a subtitle
   image: images/photo.jpg
   group: Resources
   link: https://aymeric-collart.shinyapps.io/shinyapps_langconfdata_dashboard/
-  description: "This survey investigates the linguistic diversity in language processing conferences, from 2012 to 2024. This is the companion website including follow-up data of the article A decade of language processing research: Which place for linguistic diversity?."
+  description: "This survey investigates the linguistic diversity in language processing conferences, from 2012 to 2024. This is the companion website including follow-up data of the article <i>A decade of language processing research: Which place for linguistic diversity?</i>."
   tags:
     - Resources
 
 - title: "Corpus linguistics: Web scraping and data analyses"
-  subtitle: a subtitle
+  #subtitle: a subtitle
   group: Tutorials
   image: images/photo.jpg
   link: https://aymeric-collart.github.io/CHU0387/
