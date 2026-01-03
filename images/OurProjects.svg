@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="130 90 540 420" width="800" height="600">
   <defs>
     <filter id="glow2b" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
@@ -33,46 +33,41 @@
     </g>
   </defs>
 
-  <g transform="translate(400,300) scale(1.6) translate(-400,-300)">
-      
-      <g stroke="#e0e6ed" stroke-width="2" fill="none">
-        <path id="pPath1b" d="M400,300 L200,150"/>
-        <path id="pPath2b" d="M400,300 L600,150"/>
-        <path id="pPath3b" d="M400,300 L200,450"/>
-        <path id="pPath4b" d="M400,300 L600,450"/>
-        <path id="outerRingb" d="M200,150 L600,150 L600,450 L200,450 Z" opacity="0.4"/>
-      </g>
-
-      <circle cx="400" cy="300" r="35" fill="#2c3e50" stroke="#20c997" stroke-width="3"/>
-      <text x="400" y="305" fill="#fff" font-family="Arial" font-weight="bold" font-size="16" text-anchor="middle">LPU</text>
-      <text x="400" y="322" fill="#20c997" font-family="Arial" font-size="12" text-anchor="middle">Projects</text>
-
-      <g transform="translate(200, 150)">
-          <circle r="28" fill="#fff" stroke="#2c3e50" stroke-width="2"/>
-          <use href="#icon-data"/>
-      </g>
-      <g transform="translate(600, 150)">
-          <circle r="28" fill="#fff" stroke="#2c3e50" stroke-width="2"/>
-          <use href="#icon-code"/>
-      </g>
-      <g transform="translate(200, 450)">
-          <circle r="28" fill="#fff" stroke="#2c3e50" stroke-width="2"/>
-           <use href="#icon-open" transform="translate(0,2)"/>
-      </g>
-      <g transform="translate(600, 450)">
-          <circle r="28" fill="#fff" stroke="#2c3e50" stroke-width="2"/>
-          <use href="#icon-tools"/>
-      </g>
-
-      <use href="#particleGreenb"><animateMotion dur="2.5s" repeatCount="indefinite"><mpath href="#pPath1b"/></animateMotion></use>
-      <use href="#particleGreenb"><animateMotion dur="2.5s" begin="0.6s" repeatCount="indefinite"><mpath href="#pPath2b"/></animateMotion></use>
-      <use href="#particleGreenb"><animateMotion dur="2.5s" begin="1.2s" repeatCount="indefinite"><mpath href="#pPath3b"/></animateMotion></use>
-      <use href="#particleGreenb"><animateMotion dur="2.5s" begin="1.8s" repeatCount="indefinite"><mpath href="#pPath4b"/></animateMotion></use>
-      <use href="#particleGreenb" r="4" opacity="0.8">
-        <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
-          <mpath href="#outerRingb"/>
-        </animateMotion>
-      </use>
-
+  <g stroke="#e0e6ed" stroke-width="2" fill="none">
+    <path id="pPath1b" d="M400,300 L200,150"/>
+    <path id="pPath2b" d="M400,300 L600,150"/>
+    <path id="pPath3b" d="M400,300 L200,450"/>
+    <path id="pPath4b" d="M400,300 L600,450"/>
+    <path id="outerRingb" d="M200,150 L600,150 L600,450 L200,450 Z" opacity="0.4"/>
   </g>
+
+  <circle cx="400" cy="300" r="35" fill="#2c3e50" stroke="#20c997" stroke-width="3"/>
+  <text x="400" y="307" fill="#fff" font-family="Arial" font-weight="bold" font-size="16" text-anchor="middle">LPU</text>
+
+  <g transform="translate(200, 150)">
+      <circle r="28" fill="#fff" stroke="#2c3e50" stroke-width="2"/>
+      <use href="#icon-data"/>
+  </g>
+  <g transform="translate(600, 150)">
+      <circle r="28" fill="#fff" stroke="#2c3e50" stroke-width="2"/>
+      <use href="#icon-code"/>
+  </g>
+  <g transform="translate(200, 450)">
+      <circle r="28" fill="#fff" stroke="#2c3e50" stroke-width="2"/>
+       <use href="#icon-open" transform="translate(0,2)"/>
+  </g>
+  <g transform="translate(600, 450)">
+      <circle r="28" fill="#fff" stroke="#2c3e50" stroke-width="2"/>
+      <use href="#icon-tools"/>
+  </g>
+
+  <use href="#particleGreenb"><animateMotion dur="2.5s" repeatCount="indefinite"><mpath href="#pPath1b"/></animateMotion></use>
+  <use href="#particleGreenb"><animateMotion dur="2.5s" begin="0.6s" repeatCount="indefinite"><mpath href="#pPath2b"/></animateMotion></use>
+  <use href="#particleGreenb"><animateMotion dur="2.5s" begin="1.2s" repeatCount="indefinite"><mpath href="#pPath3b"/></animateMotion></use>
+  <use href="#particleGreenb"><animateMotion dur="2.5s" begin="1.8s" repeatCount="indefinite"><mpath href="#pPath4b"/></animateMotion></use>
+  <use href="#particleGreenb" r="4" opacity="0.8">
+    <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#outerRingb"/>
+    </animateMotion>
+  </use>
 </svg>

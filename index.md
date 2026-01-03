@@ -3,15 +3,16 @@
 
 # Exploration of language in the mind
 
-We aim at understanding how language is used and how it is represented in the mind
+
+Welcome to the website of the Language Processing and Usage Lab, hosted at the Department of Chinese of National Taiwan Normal University!
+We aim at understanding how language is used and how it is represented in the mind, using a variety of quantitative methods such as corpus explorations, behavioral experiments and neuroimaging technique to support theoretical analyses.
+We are particularly interested in diversity as a whole: diversity of languages (see our research on Taiwan Mandarin, Paiwan, Truku Seediq, and Tagalog, among others), diversity of individuals (younger and older populations, individuals with different socioeconomic backgrounds, etc.), and diversity of topics.
+{:.center}
 
 {% include section.html %}
 
-## News
-{% include alert.html type="info" content="**03 Jan 2026:** The website of the LPU lab has been launched!" %}
 
-
-## Highlights
+## The LPU lab at a glance
 
 {% capture text %}
 
@@ -84,3 +85,6 @@ This is the team of the LPU lab, click here to know more about us!
   title="Our Team"
   text=text
 %}
+
+## News
+{% include alert.html type="info" content="**03 Jan 2026:** The website of the LPU lab has been launched!" %}

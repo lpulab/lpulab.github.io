@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="120 90 560 500" width="800" height="600">
   <defs>
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
@@ -10,53 +10,49 @@
     <circle id="particle" r="5" fill="#00f2ff" filter="url(#glow)"/>
   </defs>
 
-  <g transform="translate(400,300) scale(1.5) translate(-400,-300)">
-      
-      <g stroke="#e0e6ed" stroke-width="2" fill="none" stroke-linecap="round">
-        <path id="brainPath1" d="M400,150 Q250,150 200,300 Q180,450 300,500 Q400,520 500,500 Q620,450 600,300 Q550,150 400,150 Z" opacity="0.5"/>
-        <path id="brainPath2" d="M400,150 L400,300 L300,400 L200,300 L250,200 L400,150" opacity="0.3"/>
-        <path id="brainPath3" d="M400,150 L550,200 L600,300 L500,400 L400,300" opacity="0.3"/>
-        <path id="brainPath4" d="M300,400 L400,520 L500,400" opacity="0.3"/>
-        <line x1="250" y1="200" x2="550" y2="200" opacity="0.2"/>
-        <line x1="200" y1="300" x2="600" y2="300" opacity="0.2"/>
-      </g>
-
-      <g fill="#2c3e50">
-        <circle cx="400" cy="150" r="8"/>
-        <circle cx="200" cy="300" r="8"/>
-        <circle cx="600" cy="300" r="8"/>
-        <circle cx="400" cy="520" r="8"/>
-        <circle cx="400" cy="300" r="10" fill="#3498db"/>
-        <text x="250" y="205" font-family="Arial" font-weight="bold" font-size="20" fill="#2c3e50" text-anchor="middle">A</text>
-        <text x="550" y="205" font-family="Arial" font-weight="bold" font-size="20" fill="#2c3e50" text-anchor="middle">文</text>
-        <text x="300" y="405" font-family="Arial" font-weight="bold" font-size="20" fill="#2c3e50" text-anchor="middle">Σ</text>
-      </g>
-
-      <use href="#particle">
-        <animateMotion dur="4s" repeatCount="indefinite" rotate="auto">
-          <mpath href="#brainPath1"/>
-        </animateMotion>
-      </use>
-      <use href="#particle" opacity="0.7">
-        <animateMotion dur="6s" begin="1s" repeatCount="indefinite" rotate="auto">
-          <mpath href="#brainPath1"/>
-        </animateMotion>
-      </use>
-      <use href="#particle">
-        <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
-          <mpath href="#brainPath2"/>
-        </animateMotion>
-      </use>
-      <use href="#particle" opacity="0.8">
-        <animateMotion dur="3.5s" begin="0.5s" repeatCount="indefinite" rotate="auto">
-          <mpath href="#brainPath3"/>
-        </animateMotion>
-      </use>
-      <use href="#particle">
-        <animateMotion dur="2s" begin="0s" repeatCount="indefinite" rotate="auto" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
-           <mpath href="#brainPath4"/>
-        </animateMotion>
-      </use>
-
+  <g stroke="#e0e6ed" stroke-width="2" fill="none" stroke-linecap="round">
+    <path id="brainPath1" d="M400,150 Q250,150 200,300 Q180,450 300,500 Q400,520 500,500 Q620,450 600,300 Q550,150 400,150 Z" opacity="0.5"/>
+    <path id="brainPath2" d="M400,150 L400,300 L300,400 L200,300 L250,200 L400,150" opacity="0.3"/>
+    <path id="brainPath3" d="M400,150 L550,200 L600,300 L500,400 L400,300" opacity="0.3"/>
+    <path id="brainPath4" d="M300,400 L400,520 L500,400" opacity="0.3"/>
+    <line x1="250" y1="200" x2="550" y2="200" opacity="0.2"/>
+    <line x1="200" y1="300" x2="600" y2="300" opacity="0.2"/>
   </g>
+
+  <g fill="#2c3e50">
+    <circle cx="400" cy="150" r="8"/>
+    <circle cx="200" cy="300" r="8"/>
+    <circle cx="600" cy="300" r="8"/>
+    <circle cx="400" cy="520" r="8"/>
+    <circle cx="400" cy="300" r="10" fill="#3498db"/>
+    <text x="250" y="205" font-family="Arial" font-weight="bold" font-size="20" fill="#2c3e50" text-anchor="middle">A</text>
+    <text x="550" y="205" font-family="Arial" font-weight="bold" font-size="20" fill="#2c3e50" text-anchor="middle">文</text>
+    <text x="300" y="405" font-family="Arial" font-weight="bold" font-size="20" fill="#2c3e50" text-anchor="middle">Σ</text>
+  </g>
+
+  <use href="#particle">
+    <animateMotion dur="4s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#brainPath1"/>
+    </animateMotion>
+  </use>
+  <use href="#particle" opacity="0.7">
+    <animateMotion dur="6s" begin="1s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#brainPath1"/>
+    </animateMotion>
+  </use>
+  <use href="#particle">
+    <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#brainPath2"/>
+    </animateMotion>
+  </use>
+  <use href="#particle" opacity="0.8">
+    <animateMotion dur="3.5s" begin="0.5s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#brainPath3"/>
+    </animateMotion>
+  </use>
+  <use href="#particle">
+    <animateMotion dur="2s" begin="0s" repeatCount="indefinite" rotate="auto" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+       <mpath href="#brainPath4"/>
+    </animateMotion>
+  </use>
 </svg>
