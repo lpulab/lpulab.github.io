@@ -7,71 +7,37 @@ nav:
 
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+{%
+  include button.html
+  type="email"
+  tooltip="Email to the PI"
+  text="aymeric.collart@ntnu.edu.tw"
+  link="aymeric.collart@ntnu.edu.tw"
+%}
 
 {%
   include button.html
   type="email"
-  text="jane@smith.com"
-  link="jane@smith.com"
+  tooltip="Email to the lab"
+  text="lpulab.ntnu@gmail.com"
+  link="lpulab.ntnu@gmail.com"
 %}
+
 {%
   include button.html
   type="phone"
-  text="(555) 867-5309"
-  link="+1-555-867-5309"
+  tooltip="PI's office phone number"
+  text="+886-2-77491579"
+  link="+886-2-77491579"
 %}
+
 {%
   include button.html
   type="address"
-  tooltip="Our location on Google Maps for easy navigation"
-  link="https://www.google.com/maps"
+  tooltip="Location of National Taiwan Normal University"
+  link="https://maps.app.goo.gl/eMLxgByGwwAg9VYN8"
 %}
 
 {% include section.html %}
 
-{% capture col1 %}
-
-{%
-  include figure.html
-  image="images/photo.jpg"
-  caption="Lorem ipsum"
-%}
-
-{% endcapture %}
-
-{% capture col2 %}
-
-{%
-  include figure.html
-  image="images/photo.jpg"
-  caption="Lorem ipsum"
-%}
-
-{% endcapture %}
-
-{% include cols.html col1=col1 col2=col2 %}
-
-{% include section.html dark=true %}
-
-{% capture col1 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% capture col2 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% capture col3 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% include cols.html col1=col1 col2=col2 col3=col3 %}
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5084.713588809032!2d121.52623480902126!3d25.023318988417046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9854425be61%3A0xc79998efecaf0634!2sNational%20Taiwan%20Normal%20University!5e0!3m2!1sen!2stw!4v1767459288545!5m2!1sen!2stw" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

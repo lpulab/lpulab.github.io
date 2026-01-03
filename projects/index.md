@@ -5,10 +5,9 @@ nav:
   tooltip: Projects, resources and tutorials
 ---
 
-# {% include icon.html icon="fa-solid fa-wrench" %}Projects
+# {% include icon.html icon="fa-solid fa-wrench" %}Projects and more
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Past and on-going projects run in the lab are listed below. Resources such as dashboards and datasets associated with our publications in addition to tutorials can be found below. 
 
 {% include tags.html tags="Projects, Resources, Tutorials" %}
 
