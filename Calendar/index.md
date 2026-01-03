@@ -1,7 +1,7 @@
 ---
 title: Calendar
 nav:
-  order: 7
+  order: 4
   tooltip: LPU lab's public calendar
 ---
 
