@@ -1,5 +1,5 @@
 ---
-title: Calendar
+title: calendar
 nav:
   order: 4
   tooltip: LPU lab's public calendar
