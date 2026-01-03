@@ -7,7 +7,6 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    
     <circle id="particleDot" r="4" fill="#fff" filter="url(#glowGold2)"/>
 
     <g id="abstractFigure">
@@ -17,73 +16,53 @@
     </g>
   </defs>
 
-  <g stroke="#e0e6ed" stroke-width="1" fill="none" opacity="0.3">
-      <line x1="200" y1="300" x2="400" y2="200"/>
-      <line x1="400" y1="200" x2="600" y2="300"/>
-      <line x1="200" y1="300" x2="300" y2="450"/>
-      <line x1="600" y1="300" x2="500" y2="450"/>
-      <line x1="300" y1="450" x2="500" y2="450"/>
-  </g>
+  <g transform="translate(400,300) scale(1.6) translate(-400,-300)">
 
-  <g stroke="#ffc107" stroke-width="2" fill="none" stroke-dasharray="400" stroke-dashoffset="400" opacity="0.6">
-      <path d="M200,305 L400,205">
-          <animate attributeName="stroke-dashoffset" to="0" dur="1s" begin="1.8s" fill="freeze"/>
-      </path>
-      <path d="M400,205 L600,305">
-          <animate attributeName="stroke-dashoffset" to="0" dur="1s" begin="2s" fill="freeze"/>
-      </path>
-      <path d="M300,455 L500,455">
-          <animate attributeName="stroke-dashoffset" to="0" dur="1s" begin="2.2s" fill="freeze"/>
-      </path>
-  </g>
+      <g stroke="#e0e6ed" stroke-width="1" fill="none" opacity="0.3">
+          <line x1="200" y1="300" x2="400" y2="200"/>
+          <line x1="400" y1="200" x2="600" y2="300"/> 
+          <line x1="200" y1="300" x2="300" y2="450"/>
+          <line x1="600" y1="300" x2="500" y2="450"/>
+          <line x1="300" y1="450" x2="500" y2="450"/>
+      </g>
 
-  <g transform="translate(200, 300)">
-    <g> <use href="#abstractFigure"/>
-        <animateTransform attributeName="transform" type="scale" 
-                          values="0 0; 1.2 1.2; 1 1" keyTimes="0; 0.6; 1"
-                          dur="0.7s" begin="0s" fill="freeze"
-                          calcMode="spline" keySplines="0.25 0.1 0.25 1; 0.25 0.1 0.25 1"/>
-    </g>
-  </g>
+      <g stroke="#ffc107" stroke-width="2" fill="none" stroke-dasharray="400" stroke-dashoffset="400" opacity="0.6">
+          <path d="M200,305 L400,205">
+              <animate attributeName="stroke-dashoffset" to="0" dur="1s" begin="1.8s" fill="freeze"/>
+          </path>
+          <path d="M400,205 L600,305">
+              <animate attributeName="stroke-dashoffset" to="0" dur="1s" begin="2s" fill="freeze"/>
+          </path>
+          <path d="M300,455 L500,455">
+              <animate attributeName="stroke-dashoffset" to="0" dur="1s" begin="2.2s" fill="freeze"/>
+          </path>
+      </g>
 
-  <g transform="translate(400, 200)">
-    <g>
-        <use href="#abstractFigure"/>
-        <animateTransform attributeName="transform" type="scale" 
-                          values="0 0; 1.2 1.2; 1 1" keyTimes="0; 0.6; 1"
-                          dur="0.7s" begin="0.4s" fill="freeze"
-                          calcMode="spline" keySplines="0.25 0.1 0.25 1; 0.25 0.1 0.25 1"/>
-    </g>
-  </g>
+      <g transform="translate(200, 300)">
+        <g> <use href="#abstractFigure"/>
+            <animateTransform attributeName="transform" type="scale" values="0 0; 1.2 1.2; 1 1" keyTimes="0; 0.6; 1" dur="0.7s" begin="0s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1; 0.25 0.1 0.25 1"/>
+        </g>
+      </g>
+      <g transform="translate(400, 200)">
+        <g> <use href="#abstractFigure"/>
+            <animateTransform attributeName="transform" type="scale" values="0 0; 1.2 1.2; 1 1" keyTimes="0; 0.6; 1" dur="0.7s" begin="0.4s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1; 0.25 0.1 0.25 1"/>
+        </g>
+      </g>
+      <g transform="translate(600, 300)">
+        <g> <use href="#abstractFigure"/>
+            <animateTransform attributeName="transform" type="scale" values="0 0; 1.2 1.2; 1 1" keyTimes="0; 0.6; 1" dur="0.7s" begin="0.8s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1; 0.25 0.1 0.25 1"/>
+        </g>
+      </g>
+      <g transform="translate(300, 450)">
+        <g> <use href="#abstractFigure"/>
+            <animateTransform attributeName="transform" type="scale" values="0 0; 1.2 1.2; 1 1" keyTimes="0; 0.6; 1" dur="0.7s" begin="1.2s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1; 0.25 0.1 0.25 1"/>
+        </g>
+      </g>
+      <g transform="translate(500, 450)">
+        <g> <use href="#abstractFigure"/>
+            <animateTransform attributeName="transform" type="scale" values="0 0; 1.2 1.2; 1 1" keyTimes="0; 0.6; 1" dur="0.7s" begin="1.6s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1; 0.25 0.1 0.25 1"/>
+        </g>
+      </g>
 
-  <g transform="translate(600, 300)">
-    <g>
-        <use href="#abstractFigure"/>
-        <animateTransform attributeName="transform" type="scale" 
-                          values="0 0; 1.2 1.2; 1 1" keyTimes="0; 0.6; 1"
-                          dur="0.7s" begin="0.8s" fill="freeze"
-                          calcMode="spline" keySplines="0.25 0.1 0.25 1; 0.25 0.1 0.25 1"/>
-    </g>
   </g>
-  
-  <g transform="translate(300, 450)">
-    <g>
-        <use href="#abstractFigure"/>
-        <animateTransform attributeName="transform" type="scale" 
-                          values="0 0; 1.2 1.2; 1 1" keyTimes="0; 0.6; 1"
-                          dur="0.7s" begin="1.2s" fill="freeze"
-                          calcMode="spline" keySplines="0.25 0.1 0.25 1; 0.25 0.1 0.25 1"/>
-    </g>
-  </g>
-    
-  <g transform="translate(500, 450)">
-    <g>
-        <use href="#abstractFigure"/>
-        <animateTransform attributeName="transform" type="scale" 
-                          values="0 0; 1.2 1.2; 1 1" keyTimes="0; 0.6; 1"
-                          dur="0.7s" begin="1.6s" fill="freeze"
-                          calcMode="spline" keySplines="0.25 0.1 0.25 1; 0.25 0.1 0.25 1"/>
-    </g>
-  </g>
-
 </svg>
