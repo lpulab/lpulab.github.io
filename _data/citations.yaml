@@ -46,6 +46,7 @@
   orcid: 0000-0002-8902-0758
   plugin: sources.py
   file: sources.yaml
+  image: /images/Book_chapter.jpg
 - id: doi:10.1163/2772_5766_hflo_com_204030
   title: 'Review of indigenous language teaching and beyond in Taiwan: A race against
     time'
@@ -59,6 +60,7 @@
   orcid: 0000-0002-8902-0758
   plugin: sources.py
   file: sources.yaml
+  image: /images/Book_chapter.jpg
 - id: doi:10.1075/consl.21046.col
   title: "Expressing the existence of an event with \u2018<i>you</i> (to have) + VP\u2019\
     \ in Taiwan Mandarin"

@@ -18,10 +18,12 @@
 - id: doi:10.1163/2772_5766_hflo_com_202230
   title: "Experimental linguistics embracing linguistic diversity: On the contributions of Formosan languages to models of sentence processing"
   authors: Aymeric Collart
+  image: /images/Book_chapter.jpg
   date: 2024-01-02
   publisher: "Handbook of Formosan languages: The indigenous languages of Taiwan"
 - id: doi:10.1163/2772_5766_hflo_com_204030
   title: "Review of indigenous language teaching and beyond in Taiwan: A race against time"
+  image: /images/Book_chapter.jpg
   authors:
   - Aymeric Collart
   - Joy J. Wu
