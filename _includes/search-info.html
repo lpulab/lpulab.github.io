@@ -1,1 +1,42 @@
 <div class="search-info"></div>
+
+{% if page.lang == 'zh-tw' %}
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const infoDiv = document.querySelector('.search-info');
+    if (!infoDiv) return;
+
+    // Watch the div for the hidden theme script injecting English text
+    const observer = new MutationObserver(function(mutations) {
+      const html = infoDiv.innerHTML;
+      
+      // If English text is detected, translate it instantly
+      if (html.includes('Showing') || html.includes('Clear search')) {
+        
+        // Pause observer to prevent infinite loops while editing
+        observer.disconnect();
+
+        let newHtml = html;
+        
+        // Translate "Showing X of Y results"
+        newHtml = newHtml.replace(/Showing\s+(\d+)\s+of\s+(\d+)\s+results/gi, "顯示 $1 筆，共 $2 筆結果");
+        
+        // Translate "Showing X results" (fallback/singular)
+        newHtml = newHtml.replace(/Showing\s+(\d+)\s+result(s)?/gi, "顯示 $1 筆結果");
+        
+        // Translate the "Clear search" button
+        newHtml = newHtml.replace(/>Clear search</gi, ">清除搜尋<");
+
+        // Apply translations
+        infoDiv.innerHTML = newHtml;
+
+        // Restart observer for the next time the user types a letter
+        observer.observe(infoDiv, { childList: true, subtree: true, characterData: true });
+      }
+    });
+
+    // Start watching the container
+    observer.observe(infoDiv, { childList: true, subtree: true, characterData: true });
+  });
+</script>
+{% endif %}

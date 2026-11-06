@@ -7,7 +7,8 @@
   {% assign member = include %}
 {% endif %}
 
-{% assign type = site.data.types[member.role] %}
+{% assign base_role = member.role | remove: "-zh" %}
+{% assign type = site.data.types[base_role] %}
 
 <div class="portrait-wrapper">
   <a
@@ -16,7 +17,7 @@
     {% endif %}
     class="portrait"
     data-style="{{ include.style }}"
-    aria-label="{{ member.name | default: "member link" | regex_strip }}"
+    aria-label="{{ member.name | default: 'member link' | regex_strip }}"
   >
     {% if type %}
       {% include icon.html icon=type.icon %}

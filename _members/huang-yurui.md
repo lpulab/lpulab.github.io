@@ -1,8 +1,6 @@
 ---
 name: 黃于睿
 image: images/photo.jpg
-description: Research assistant
-role: undergrad
+description: Master student & research assistant
+role: master
 ---
-
-[Description provided later]

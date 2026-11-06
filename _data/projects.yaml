@@ -6,6 +6,14 @@
   tags:
     - Projects
 
+- title: "探索及追縱臺灣華語的「非標準」時貌與情態標記：構詞句法、語意及語域分析"
+  subtitle: 國科會專專題研究計畫 (2025/12-2027/11)
+  group: Projects-zh
+  image: images/NSTC_2025.png
+  description: "從形態句法與社會語言學視角，運用語料庫語言學方法探討臺灣華語語法標記（助動詞「有」及句尾助詞「過」）之使用情形的研究計畫。" 
+  tags:
+    - 研究計畫
+
 - title: "On the validation of the use of wireless EEG systems for neurolinguistic research: A replication study of a grammatical ERP experiment"
   subtitle: NTNU project (2026)
   group: Projects
@@ -14,6 +22,15 @@
   description: "Research project focusing on the evaluation of wireless EEG systems for neurolinguistic research."
   tags:
     - Projects
+    
+- title: "無線腦電圖系統於神經語言學研究應用的驗證： ERP語法實驗的再現性研究"
+  subtitle: 國立臺灣師範大學「新進教師之專題研究」 (2026)
+  group: Projects-zh
+  image: images/NTNU2026.png
+  size: full
+  description: "探討並評估無線 EEG 系統應用於神經語言學研究之可行性的研究計畫。"
+  tags:
+    - 研究計畫
 
 - title: "Diversity in language processing conferences: A survey"
   #subtitle: a subtitle
@@ -23,6 +40,15 @@
   description: "This survey investigates the linguistic diversity in language processing conferences, from 2012 to 2024. This is the companion website including follow-up data of the article <i>A decade of language processing research: Which place for linguistic diversity?</i>."
   tags:
     - Resources
+    
+- title: "語言處理研討會的多樣性調查"
+  image: images/DashboardLangDiv.png
+  group: Resources-zh
+  link: https://aymeric-collart.shinyapps.io/shinyapps_langconfdata_dashboard/
+  description: "本調查探討 2012 至 2024 年間語言處理研討會中的語言多樣性。這是包含文章《A decade of language processing research: Which place for linguistic diversity?》後續追蹤數據的配套網站。"
+  tags:
+    - 研究資源
+    
 
 - title: "Corpus linguistics: Web scraping and data analyses"
   #subtitle: a subtitle
@@ -32,3 +58,11 @@
   description: Introductory tutorial to web scraping and simple analyses of corpus data (Course CHU03887)
   tags:
     - Tutorials
+    
+- title: "語料庫語言學：網路爬蟲與資料分析"
+  group: Tutorials-zh
+  image: images/TutorialCorpus.png
+  link: https://aymeric-collart.github.io/CHU0387/
+  description: 語料庫資料網路爬蟲與基礎分析入門教學指南（課程代號 CHU03887）
+  tags:
+    - 教學指南

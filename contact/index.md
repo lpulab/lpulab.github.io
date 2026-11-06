@@ -3,6 +3,7 @@ title: Contact
 nav:
   order: 5
   tooltip: Email, address, and location
+lang: en
 ---
 
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact

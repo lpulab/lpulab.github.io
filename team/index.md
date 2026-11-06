@@ -3,6 +3,7 @@ title: Team
 nav:
   order: 1
   tooltip: About our team
+lang: en
 ---
 
 # {% include icon.html icon="fa-solid fa-users" %}Team
@@ -14,6 +15,11 @@ Each of us brings unique perspectives to this broad topic based on our own inter
 
 ## Principal investigator
 {% include list.html data="members" component="portrait" filter="role == 'principal-investigator'" %}
+
+{% include section.html %}
+
+## Master students
+{% include list.html data="members" component="portrait" filter="role == 'master'" %}
 
 {% include section.html %}
 ## Undergraduate students

@@ -6,13 +6,15 @@
 {% assign jpg = "images/logo.jpg" | file_exists %}
 {% assign logo = svg | default: png | default: jpg | default: nil %}
 
+{% assign current_lang = page.lang | default: 'en' %}
+
 <header
   class="background"
   style="--image: url('{{ image | relative_url | uri_escape }}')"
   {% if dark == true or dark == false %}
     data-dark="{{ dark }}"
   {% endif %}
-  {% if page.url == "/" %}
+  {% if page.url == "/" or page.url == "/zh-tw/" %}
     data-big
   {% endif %}
 >
@@ -29,7 +31,11 @@
     {% if site.logo-text != false %}
       <span class="title-text" data-tooltip="Home">
         {% if site.title and site.show-title != false %}
-          <span class="title">{{ site.title }}</span>
+          {% if current_lang == 'zh-tw' %}
+            <span class="title">語言處理及使用實驗室</span>
+          {% else %}
+            <span class="title">{{ site.title }}</span>
+          {% endif %}
         {% endif %}
         {% if site.subtitle and site.show-subtitle != false %}
           <span class="subtitle">{{ site.subtitle }}</span>
@@ -41,19 +47,32 @@
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
   <nav>
-    {% assign pages = site.pages
-      | where_exp: "page", "page.nav"
+    {% assign nav_pages = site.pages
+      | where_exp: "item", "item.nav"
+      | where_exp: "item", "item.lang == current_lang"
       | sort: "nav.order"
     %}
-    {% for page in pages %}
-      {% if page.nav %}
+    {% for p in nav_pages %}
+      {% if p.nav %}
         <a
-          href="{{ page.dir | relative_url | uri_escape }}"
-          data-tooltip="{{ page.nav.tooltip | xml_escape }}"
+          href="{{ p.dir | relative_url | uri_escape }}"
+          data-tooltip="{{ p.nav.tooltip | xml_escape }}"
         >
-          {{ page.title }}
+          {{ p.title }}
         </a>
       {% endif %}
     {% endfor %}
+
+    {% if current_lang == 'en' %}
+      {% if page.url == '/' %}
+        <a href="/zh-tw/" data-tooltip="繁體中文">繁體中文</a>
+      {% else %}
+        <a href="/zh-tw{{ page.url }}" data-tooltip="繁體中文">繁體中文</a>
+      {% endif %}
+    {% else %}
+      {% assign en_url = page.url | remove_first: '/zh-tw' %}
+      {% if en_url == '' %}{% assign en_url = '/' %}{% endif %}
+      <a href="{{ en_url }}" data-tooltip="English">English</a>
+    {% endif %}
   </nav>
 </header>

@@ -3,12 +3,21 @@
     type="text"
     class="search-input"
     oninput="onSearchInput(this)"
-    placeholder="Search items on this page"
+    {% if page.lang == 'zh-tw' %}
+      placeholder="在此頁面搜尋"
+    {% else %}
+      placeholder="Search items on this page"
+    {% endif %}
   />
   <button
     disabled
-    data-tooltip="Clear search"
-    aria-label="clear search"
+    {% if page.lang == 'zh-tw' %}
+      data-tooltip="清除搜尋"
+      aria-label="清除搜尋"
+    {% else %}
+      data-tooltip="Clear search"
+      aria-label="clear search"
+    {% endif %}
     onclick="onSearchClear()"
   >
     {% include icon.html icon="fa-solid fa-magnifying-glass" %}

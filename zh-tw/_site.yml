@@ -1,0 +1,11 @@
+name: "lpu-lab-zh"
+navbar:
+  title: "語言處理及使用實驗室"
+  left:
+    - text: "首頁"
+      href: index.html
+    - text: "研究"
+      href: research.html
+  right:
+    - text: "English"
+      href: "../index.html"

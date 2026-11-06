@@ -3,6 +3,7 @@ title: Projects & more
 nav:
   order: 2
   tooltip: Projects, resources and tutorials
+lang: en
 ---
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Projects and more

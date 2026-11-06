@@ -2,6 +2,7 @@
 editor_options: 
   markdown: 
     wrap: 72
+lang: en
 ---
 
 # Exploration of language in the mind
@@ -23,6 +24,12 @@ backgrounds, etc.), and diversity of topics.
 **Languages studied so far:** English, Paiwan, Tagalog, Taiwan Mandarin,
 Truku Seediq
 {:.center}
+
+{% include section.html %}
+## News
+
+{% include alert.html type="info" content="**01 Oct 2026:** The website
+of the LPU lab has been launched!" %}
 
 {% include section.html %}
 
@@ -67,10 +74,3 @@ fa-arrow-right" flip=true style="bare" %}
 
 {% include feature.html image="images/OurTeam.svg" link="team"
 title="Our Team" text=text %}
-
-{% include section.html %}
-
-## News
-
-{% include alert.html type="info" content="**03 Jan 2026:** The website
-of the LPU lab has been launched!" %}

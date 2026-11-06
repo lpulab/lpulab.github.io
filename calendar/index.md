@@ -3,6 +3,7 @@ title: calendar
 nav:
   order: 4
   tooltip: LPU lab's public calendar
+lang: en
 ---
 
 # {% include icon.html icon="fa-solid fa-calendar" %}Calendar

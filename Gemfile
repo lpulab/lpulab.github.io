@@ -14,3 +14,5 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-last-modified-at"
 end
+
+gem "ostruct", "~> 0.6.3"
