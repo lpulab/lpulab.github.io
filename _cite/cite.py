@@ -144,22 +144,15 @@ for index, source in enumerate(sources):
             # run manubot and set citation
             citation = cite_with_manubot(_id)
 
-        # if manubot cannot cite source (catch Exception or NameError from upstream date bugs)
+        # if manubot cannot cite source, treat as warning and skip
         except Exception as e:
             plugin = get_safe(source, "plugin", "")
             file = get_safe(source, "file", "")
-            
-            # If it's a manual source entered by user, log as error
-            if plugin == "sources.py":
-                log(e, indent=3, level="ERROR")
-                errors.append(f"Manubot could not generate citation for source {_id}")
-            # Otherwise (from APIs like ORCID/Crossref date glitches), log as warning and gracefully skip
-            else:
-                log(e, indent=3, level="WARNING")
-                warnings.append(
-                    f"Manubot could not generate citation for source {_id} (from {file} with {plugin})"
-                )
-                continue
+            log(e, indent=3, level="WARNING")
+            warnings.append(
+                f"Manubot could not generate citation for source {_id} (from {file} with {plugin})"
+            )
+            continue
 
     # preserve fields from input source, overriding existing fields
     citation.update(source)
