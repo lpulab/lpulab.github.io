@@ -80,3 +80,19 @@ exclude:
   - projects/index_files
   - team/index.html
   - team/index_files
+  - calendar/index.html
+  - calendar/index_files
+  - contact/index.html
+  - contact/index_files
+  - zh-tw/index.html
+  - zh-tw/index_files
+  - zh-tw/research/index.html
+  - zh-tw/research/index_files
+  - zh-tw/projects/index.html
+  - zh-tw/projects/index_files
+  - zh-tw/team/index.html
+  - zh-tw/team/index_files
+  - zh-tw/calendar/index.html
+  - zh-tw/calendar/index_files
+  - zh-tw/contact/index.html
+  - zh-tw/contact/index_files
