@@ -72,3 +72,11 @@ exclude:
   - LICENSE.md
   - CITATION.cff
   - .Rproj.user
+  - index.html
+  - index_files
+  - research/index.html
+  - research/index_files
+  - projects/index.html
+  - projects/index_files
+  - team/index.html
+  - team/index_files
