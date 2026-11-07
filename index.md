@@ -28,8 +28,7 @@ Truku Seediq
 {% include section.html %}
 ## News
 
-{% include alert.html type="info" content="**01 Oct 2026:** The website
-of the LPU lab has been launched!" %}
+{% include news.html %}
 
 {% include section.html %}
 

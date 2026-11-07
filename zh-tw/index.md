@@ -21,7 +21,7 @@ lang: zh-tw
 
 ## 最新消息
 
-{% include alert.html type="info" content="**2026年10月01日：** 語言處理及使用實驗室網站正式上線！" %}
+{% include news.html %}
 
 {% include section.html %}
 

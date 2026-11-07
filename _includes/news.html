@@ -1,0 +1,233 @@
+{% if page.lang == 'zh-tw' %}
+  {% assign news_posts = site.posts | where: "lang", "zh-tw" %}
+{% else %}
+  {% assign news_posts = site.posts | where_exp: "item", "item.lang != 'zh-tw'" %}
+{% endif %}
+
+<div class="lpu-news-wrapper" id="lpu-news-widget">
+  <div class="lpu-news-list">
+    {% for post in news_posts %}
+      <a href="{{ post.url | relative_url }}" class="lpu-news-card" data-news-index="{{ forloop.index0 }}" {% if forloop.index > 3 %}style="display: none;"{% endif %}>
+        <div class="lpu-news-main">
+          <div class="lpu-news-header">
+            <span class="lpu-news-icon">
+              <i class="fa-solid fa-bullhorn"></i>
+            </span>
+            <span class="lpu-news-date">
+              {% if page.lang == 'zh-tw' %}
+                {{ post.date | date: "%Y年%m月%d日" }}
+              {% else %}
+                {{ post.date | date: "%d %b %Y" }}
+              {% endif %}
+            </span>
+            {% if forloop.first %}
+              <span class="lpu-news-badge">
+                {% if page.lang == 'zh-tw' %}最新{% else %}NEW{% endif %}
+              </span>
+            {% endif %}
+          </div>
+          <div class="lpu-news-title">{{ post.title }}</div>
+          {% if post.excerpt %}
+            <div class="lpu-news-excerpt">
+              {{ post.excerpt | strip_html | truncate: 110 }}
+            </div>
+          {% endif %}
+        </div>
+        <div class="lpu-news-readmore">
+          <span>{% if page.lang == 'zh-tw' %}閱讀更多{% else %}Read{% endif %}</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+
+  <div class="lpu-news-controls">
+    <button type="button" class="lpu-news-btn" id="lpu-news-prev" disabled
+      data-tooltip="{% if page.lang == 'zh-tw' %}較新的消息{% else %}Newer posts{% endif %}">
+      <i class="fa-solid fa-chevron-left"></i>
+      <span>{% if page.lang == 'zh-tw' %}較新{% else %}Newer{% endif %}</span>
+    </button>
+
+    <span class="lpu-news-page-indicator" id="lpu-news-indicator">1 / 1</span>
+
+    <button type="button" class="lpu-news-btn" id="lpu-news-next" {% if news_posts.size <= 3 %}disabled{% endif %}
+      data-tooltip="{% if page.lang == 'zh-tw' %}較舊的消息{% else %}Earlier posts{% endif %}">
+      <span>{% if page.lang == 'zh-tw' %}較舊{% else %}Earlier{% endif %}</span>
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+  </div>
+</div>
+
+<style>
+  .lpu-news-wrapper {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .lpu-news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+  .lpu-news-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+    background-color: #eaf5fc;
+    border-left: 4px solid #0892d0;
+    border-radius: 6px;
+    padding: 1.1rem 1.4rem;
+    text-decoration: none !important;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  }
+  .lpu-news-card:hover {
+    transform: translateY(-2px);
+    background-color: #e0f0fb;
+    box-shadow: 0 4px 12px rgba(8, 146, 208, 0.12);
+  }
+  .lpu-news-main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    text-align: left;
+  }
+  .lpu-news-header {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-size: 0.9rem;
+  }
+  .lpu-news-icon {
+    color: #0892d0;
+    font-size: 0.95rem;
+  }
+  .lpu-news-date {
+    font-weight: 700;
+    color: #0892d0;
+  }
+  .lpu-news-badge {
+    background-color: #0892d0;
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.1rem 0.45rem;
+    border-radius: 999px;
+    letter-spacing: 0.5px;
+  }
+  .lpu-news-title {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #1e293b;
+  }
+  .lpu-news-excerpt {
+    font-size: 0.92rem;
+    color: #475569;
+    line-height: 1.45;
+  }
+  .lpu-news-readmore {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #0892d0;
+    white-space: nowrap;
+    transition: transform 0.2s ease;
+  }
+  .lpu-news-card:hover .lpu-news-readmore {
+    transform: translateX(4px);
+  }
+  .lpu-news-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.85rem;
+    margin-top: 0.9rem;
+  }
+  .lpu-news-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: #f1f5f9;
+    color: #0892d0;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 0.4rem 0.85rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .lpu-news-btn:hover:not(:disabled) {
+    background-color: #0892d0;
+    color: #ffffff;
+    border-color: #0892d0;
+  }
+  .lpu-news-btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    color: #64748b;
+  }
+  .lpu-news-page-indicator {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #64748b;
+    min-width: 2.5rem;
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    .lpu-news-card {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.6rem;
+    }
+    .lpu-news-readmore {
+      align-self: flex-end;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const widget = document.getElementById("lpu-news-widget");
+    if (!widget) return;
+
+    const cards = Array.from(widget.querySelectorAll(".lpu-news-card"));
+    const prevBtn = document.getElementById("lpu-news-prev");
+    const nextBtn = document.getElementById("lpu-news-next");
+    const indicator = document.getElementById("lpu-news-indicator");
+
+    const perPage = 3;
+    const totalPages = Math.max(1, Math.ceil(cards.length / perPage));
+    let currentPage = 0;
+
+    function updateView() {
+      cards.forEach((card, index) => {
+        const start = currentPage * perPage;
+        const end = start + perPage;
+        card.style.display = (index >= start && index < end) ? "flex" : "none";
+      });
+
+      prevBtn.disabled = currentPage === 0;
+      nextBtn.disabled = currentPage >= totalPages - 1;
+      indicator.textContent = (currentPage + 1) + " / " + totalPages;
+    }
+
+    prevBtn.addEventListener("click", function () {
+      if (currentPage > 0) {
+        currentPage--;
+        updateView();
+      }
+    });
+
+    nextBtn.addEventListener("click", function () {
+      if (currentPage < totalPages - 1) {
+        currentPage++;
+        updateView();
+      }
+    });
+
+    updateView();
+  });
+</script>
