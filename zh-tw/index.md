@@ -5,7 +5,7 @@ editor_options:
 lang: zh-tw
 ---
 
-# 探索大腦中的語言
+# 探索心靈與大腦中的語言
 
 {:.center}
 歡迎來到國立臺灣師範大學國文學系的語言處理及使用實驗室網站！
@@ -41,7 +41,7 @@ title="研究與發表" text=text %}
 
 {% capture text %}
 
-您可以查看本實驗室過去與正在進行中的計畫。我們特別致力於推動開放科學（Open Science）。您可以在這裡找到更多資源，包括教學指南、與我們論文相關的資料集，以及附屬網站。
+您可以查看本實驗室過去與正在進行中的計畫。我們特別致力於推動開放科學。您可以在這裡找到更多資源，包括教學指南、與我們論文相關的資料集，以及附屬網站。
 
 {% include button.html link="projects" text="瀏覽我們的計畫"
 icon="fa-solid fa-arrow-right" flip=true style="bare" %}
