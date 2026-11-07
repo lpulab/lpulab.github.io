@@ -45,7 +45,7 @@ icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 {% endcapture %}
 
 {% include feature.html image="images/OurResearch.svg" link="research"
-title="Our Research and Publications" text=text %}
+title="Our research and publications" text=text %}
 
 {% capture text %}
 
@@ -60,7 +60,7 @@ icon="fa-solid fa-arrow-right" flip=true style="bare" %}
 {% endcapture %}
 
 {% include feature.html image="images/OurProjects.svg" link="projects"
-title="Our Projects and More" flip=true style="bare" text=text %}
+title="Our projects and more" flip=true style="bare" text=text %}
 
 {% capture text %}
 
