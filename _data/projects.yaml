@@ -53,7 +53,7 @@
 - title: "Corpus linguistics: Web scraping and data analyses"
   #subtitle: a subtitle
   group: Tutorials
-  image: images/TutorialCorpus.png
+  image: images/CHU0387.png
   link: https://aymeric-collart.github.io/CHU0387/
   description: Introductory tutorial to web scraping and simple analyses of corpus data (Course CHU0387)
   tags:
@@ -61,7 +61,7 @@
     
 - title: "語料庫語言學：網路爬蟲與資料分析"
   group: Tutorials-zh
-  image: images/TutorialCorpus.png
+  image: images/CHU0387.png
   link: https://aymeric-collart.github.io/CHU0387/
   description: 語料庫資料網路爬蟲與基礎分析入門教學指南（課程代號 CHU0387）
   tags:
@@ -70,7 +70,7 @@
 - title: "Web-based experimental linguistics: Design and data analyses"
   #subtitle: a subtitle
   group: Tutorials
-  image: images/TutorialCorpus.png
+  image: images/CHC9012.png
   link: https://aymeric-collart.github.io/CHC9012/
   description: Introductory tutorial to web-based language experiments and simple analyses of the data (Course CHC9012)
   tags:
@@ -78,7 +78,7 @@
     
 - title: "線上實驗語言學：設計與資料分析"
   group: Tutorials-zh
-  image: images/TutorialCorpus.png
+  image: images/CHC9012.png
   link: https://aymeric-collart.github.io/CHC9012/
   description: 線上語言實驗設計與基礎分析入門教學指南（課程代號 CHC9012）
   tags:
