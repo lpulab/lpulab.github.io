@@ -34,8 +34,8 @@ lang: zh-tw
 
 {%
   include button.html
-  type="地址"
-  tooltip="Location of National Taiwan Normal University"
+  type="address"
+  tooltip="地址"
   link="https://maps.app.goo.gl/eMLxgByGwwAg9VYN8"
 %}
 
