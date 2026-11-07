@@ -8,3 +8,20 @@
 {% for script in scripts %}
   <script src="{{ script.path | relative_url }}"></script>
 {% endfor %}
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll("a[href]");
+    links.forEach(link => {
+      const href = link.getAttribute("href");
+      if (!href) return;
+      const isExternal = link.hostname && link.hostname !== window.location.hostname;
+      const isCardOrPaper = link.closest(".card, .citation, .citation-text");
+      if (isExternal || isCardOrPaper) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener noreferrer");
+      }
+    });
+  });
+</script>
