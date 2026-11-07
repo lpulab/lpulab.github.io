@@ -72,4 +72,4 @@ fa-arrow-right" flip=true style="bare" %}
 {% endcapture %}
 
 {% include feature.html image="images/OurTeam.svg" link="team"
-title="Our Team" text=text %}
+title="Our team" text=text %}
