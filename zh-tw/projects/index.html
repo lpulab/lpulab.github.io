@@ -368,6 +368,22 @@
   <script src="/_scripts/tooltip.js"></script>
 
 
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll("a[href]");
+    links.forEach(link => {
+      const href = link.getAttribute("href");
+      if (!href) return;
+      const isExternal = link.hostname && link.hostname !== window.location.hostname;
+      const isCardOrPaper = link.closest(".card, .citation, .citation-text");
+      if (isExternal || isCardOrPaper) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener noreferrer");
+      }
+    });
+  });
+</script>
 </head>
 
   <body>
@@ -840,7 +856,7 @@
 
 <div class="card" data-style="">
   <a href="https://aymeric-collart.github.io/CHU0387/" aria-label="語料庫語言學 網路爬蟲與資料分析" class="card-image">
-    <img src="/images/TutorialCorpus.png" alt="語料庫語言學 網路爬蟲與資料分析" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/CHU0387.png" alt="語料庫語言學 網路爬蟲與資料分析" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
@@ -878,7 +894,7 @@
 
 <div class="card" data-style="">
   <a href="https://aymeric-collart.github.io/CHC9012/" aria-label="線上實驗語言學 設計與資料分析" class="card-image">
-    <img src="/images/TutorialCorpus.png" alt="線上實驗語言學 設計與資料分析" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/CHC9012.png" alt="線上實驗語言學 設計與資料分析" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
