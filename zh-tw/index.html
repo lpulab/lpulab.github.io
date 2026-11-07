@@ -638,14 +638,230 @@
 
 <h2 id="最新消息">最新消息</h2>
 
-<div class="alert" style="--color: #0ea5e9">
-  
-  <i class="icon fa-solid fa-circle-info"></i>
-  <div class="alert-content">
-    <p><strong>2026年10月01日：</strong> 語言處理及使用實驗室網站正式上線！</p>
+<div class="lpu-news-wrapper" id="lpu-news-widget">
+  <div class="lpu-news-list">
+    
+      <a href="/zh-tw/blog/website-launched/" class="lpu-news-card" data-news-index="0">
+        <div class="lpu-news-main">
+          <div class="lpu-news-header">
+            <span class="lpu-news-icon">
+              <i class="fa-solid fa-bullhorn"></i>
+            </span>
+            <span class="lpu-news-date">
+              
+                2026年10月01日
+              
+            </span>
+            
+              <span class="lpu-news-badge">
+                最新
+              </span>
+            
+          </div>
+          <div class="lpu-news-title">語言處理及使用實驗室網站正式上線！</div>
+          
+            <div class="lpu-news-excerpt">
+              歡迎來到國立臺灣師範大學「語言處理及使用實驗室」官方網站！您可以在這裡找到我們最新的研究計畫、學術發表與教學資源等最新動態。
 
+            </div>
+          
+        </div>
+        <div class="lpu-news-readmore">
+          <span>閱讀更多</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </a>
+    
+  </div>
+
+  <div class="lpu-news-controls">
+    <button type="button" class="lpu-news-btn" id="lpu-news-prev" disabled data-tooltip="較新的消息">
+      <i class="fa-solid fa-chevron-left"></i>
+      <span>較新</span>
+    </button>
+
+    <span class="lpu-news-page-indicator" id="lpu-news-indicator">1 / 1</span>
+
+    <button type="button" class="lpu-news-btn" id="lpu-news-next" disabled data-tooltip="較舊的消息">
+      <span>較舊</span>
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
   </div>
 </div>
+
+<style>
+  .lpu-news-wrapper {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .lpu-news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+  .lpu-news-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+    background-color: #eaf5fc;
+    border-left: 4px solid #0892d0;
+    border-radius: 6px;
+    padding: 1.1rem 1.4rem;
+    text-decoration: none !important;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  }
+  .lpu-news-card:hover {
+    transform: translateY(-2px);
+    background-color: #e0f0fb;
+    box-shadow: 0 4px 12px rgba(8, 146, 208, 0.12);
+  }
+  .lpu-news-main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    text-align: left;
+  }
+  .lpu-news-header {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-size: 0.9rem;
+  }
+  .lpu-news-icon {
+    color: #0892d0;
+    font-size: 0.95rem;
+  }
+  .lpu-news-date {
+    font-weight: 700;
+    color: #0892d0;
+  }
+  .lpu-news-badge {
+    background-color: #0892d0;
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.1rem 0.45rem;
+    border-radius: 999px;
+    letter-spacing: 0.5px;
+  }
+  .lpu-news-title {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #1e293b;
+  }
+  .lpu-news-excerpt {
+    font-size: 0.92rem;
+    color: #475569;
+    line-height: 1.45;
+  }
+  .lpu-news-readmore {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #0892d0;
+    white-space: nowrap;
+    transition: transform 0.2s ease;
+  }
+  .lpu-news-card:hover .lpu-news-readmore {
+    transform: translateX(4px);
+  }
+  .lpu-news-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.85rem;
+    margin-top: 0.9rem;
+  }
+  .lpu-news-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: #f1f5f9;
+    color: #0892d0;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 0.4rem 0.85rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .lpu-news-btn:hover:not(:disabled) {
+    background-color: #0892d0;
+    color: #ffffff;
+    border-color: #0892d0;
+  }
+  .lpu-news-btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    color: #64748b;
+  }
+  .lpu-news-page-indicator {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #64748b;
+    min-width: 2.5rem;
+    text-align: center;
+  }
+  @media (max-width: 600px) {
+    .lpu-news-card {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.6rem;
+    }
+    .lpu-news-readmore {
+      align-self: flex-end;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const widget = document.getElementById("lpu-news-widget");
+    if (!widget) return;
+
+    const cards = Array.from(widget.querySelectorAll(".lpu-news-card"));
+    const prevBtn = document.getElementById("lpu-news-prev");
+    const nextBtn = document.getElementById("lpu-news-next");
+    const indicator = document.getElementById("lpu-news-indicator");
+
+    const perPage = 3;
+    const totalPages = Math.max(1, Math.ceil(cards.length / perPage));
+    let currentPage = 0;
+
+    function updateView() {
+      cards.forEach((card, index) => {
+        const start = currentPage * perPage;
+        const end = start + perPage;
+        card.style.display = (index >= start && index < end) ? "flex" : "none";
+      });
+
+      prevBtn.disabled = currentPage === 0;
+      nextBtn.disabled = currentPage >= totalPages - 1;
+      indicator.textContent = (currentPage + 1) + " / " + totalPages;
+    }
+
+    prevBtn.addEventListener("click", function () {
+      if (currentPage > 0) {
+        currentPage--;
+        updateView();
+      }
+    });
+
+    nextBtn.addEventListener("click", function () {
+      if (currentPage < totalPages - 1) {
+        currentPage++;
+        updateView();
+      }
+    });
+
+    updateView();
+  });
+</script>
   </section>
 
   
