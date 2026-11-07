@@ -239,7 +239,7 @@ def cite_with_manubot(_id):
     if year:
         # fallbacks for month and day
         month = date_part(manubot, 1) or "1"
-        #day = date_part(manubot, 2) or "1"
+        day = date_part(manubot, 2) or "1"
         citation["date"] = format_date(f"{year}-{month}-{day}")
     else:
         # if no year, consider date missing data
