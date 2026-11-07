@@ -21,6 +21,99 @@ warnings = []
 # output citations file
 output_file = "_data/citations.yaml"
 
+# link patterns used to build a bare-bones citation when Manubot fails
+fallback_links = {
+    "doi": "https://doi.org/{}",
+    "pubmed": "https://pubmed.ncbi.nlm.nih.gov/{}",
+    "pmid": "https://pubmed.ncbi.nlm.nih.gov/{}",
+    "pmc": "https://www.ncbi.nlm.nih.gov/pmc/articles/{}",
+    "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/{}",
+    "arxiv": "https://arxiv.org/abs/{}",
+    "url": "{}",
+}
+
+
+def fallback_citation(_id):
+    """
+    minimal citation built from the source id alone,
+    last resort when no full citation can be generated
+    """
+    kind, _, value = _id.partition(":")
+    pattern = fallback_links.get(kind.strip().lower())
+    link = pattern.format(value.strip()) if pattern and value.strip() else ""
+    return {"title": _id, "link": link}
+
+
+def first_text(value):
+    """
+    CSL fields can be a string or a list of strings; return one clean string
+    """
+    if isinstance(value, list):
+        value = next((v for v in value if v), "")
+    return " ".join(str(value or "").split())
+
+
+def cite_doi_directly(_id):
+    """
+    second attempt for DOIs: ask doi.org directly for the citation data (CSL JSON),
+    independent of Manubot and of the template's date handling.
+    returns a citation dict, or {} if the id isn't a DOI or the lookup fails
+    """
+    kind, _, doi = _id.partition(":")
+    doi = doi.strip()
+    if kind.strip().lower() != "doi" or not doi:
+        return {}
+
+    try:
+        import requests
+
+        response = requests.get(
+            f"https://doi.org/{doi}",
+            headers={"Accept": "application/vnd.citationstyles.csl+json"},
+            timeout=30,
+        )
+        response.raise_for_status()
+        csl = response.json()
+        if not isinstance(csl, dict) or not first_text(csl.get("title")):
+            raise Exception("doi.org returned no title")
+    except Exception as e:
+        log(f"Direct DOI lookup failed: {e}", indent=3, level="WARNING")
+        return {}
+
+    # authors, as "Given Family"
+    authors = []
+    for author in csl.get("author") or []:
+        name = " ".join(
+            filter(None, [first_text(author.get("given")), first_text(author.get("family"))])
+        )
+        authors.append(name or first_text(author.get("literal")) or first_text(author.get("name")))
+    authors = [author for author in authors if author]
+
+    # date as YYYY-MM-DD; a missing month or day becomes 01
+    date = ""
+    try:
+        parts = [int(p) for p in csl["issued"]["date-parts"][0] if p is not None]
+    except Exception:
+        parts = []
+    if parts:
+        from datetime import date as make_date
+
+        year, month, day = (parts + [1, 1])[:3]
+        try:
+            date = make_date(year, month, day).isoformat()
+        except ValueError:
+            date = f"{year:04d}-01-01"
+
+    return {
+        "title": first_text(csl.get("title")),
+        "authors": authors,
+        "publisher": first_text(csl.get("container-title"))
+        or first_text(csl.get("publisher"))
+        or first_text(csl.get("collection-title")),
+        "date": date,
+        "link": f"https://doi.org/{doi}",
+    }
+
 
 log()
 
@@ -144,15 +237,25 @@ for index, source in enumerate(sources):
             # run manubot and set citation
             citation = cite_with_manubot(_id)
 
-        # if manubot cannot cite source, treat as warning and skip
+        # if manubot cannot cite source, never drop it: try a direct DOI lookup,
+        # then fall back to a placeholder built from the id.
+        # (fields from the input source still override either one below)
         except Exception as e:
             plugin = get_safe(source, "plugin", "")
             file = get_safe(source, "file", "")
             log(e, indent=3, level="WARNING")
-            warnings.append(
-                f"Manubot could not generate citation for source {_id} (from {file} with {plugin})"
-            )
-            continue
+
+            citation = cite_doi_directly(_id)
+            if citation:
+                log("Used direct DOI lookup instead", indent=3)
+                warnings.append(
+                    f"Manubot step failed for source {_id} ({e}), used direct DOI lookup instead (from {file} with {plugin})"
+                )
+            else:
+                citation = fallback_citation(_id)
+                warnings.append(
+                    f"Could not generate full citation for source {_id} (from {file} with {plugin}), kept with limited details"
+                )
 
     # preserve fields from input source, overriding existing fields
     citation.update(source)
