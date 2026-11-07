@@ -3,40 +3,56 @@
 
 .card {
   display: inline-flex;
-  justify-content: stretch;
+  justify-content: flex-start;
   align-items: center;
+  align-self: stretch; /* Makes side-by-side cards match total height */
   flex-direction: column;
   width: 350px;
   max-width: calc(100% - 20px - 20px);
   margin: 20px;
-  background: var(--background);
+  padding: 0;
   border-radius: var(--rounded);
-  overflow: hidden;
+  background: var(--background);
   box-shadow: var(--shadow);
-  vertical-align: top;
+  overflow: hidden;
 }
 
 .card[data-style="small"] {
   width: 250px;
 }
 
-.card-image img {
+.card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 100%;
-  object-fit: contain; 
-  padding: 16px;       
+  height: 190px; 
+  padding: 20px 28px;
   box-sizing: border-box;
   background-color: #ffffff;
 }
 
+.card-image img {
+  width: 100%;
+  height: 100%;
+  max-height: 145px; 
+  object-fit: contain;
+}
+
 .card-text {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 100%;
+  flex-grow: 1; 
+  gap: 15px;
+  width: 100%;
   padding: 20px;
+  box-sizing: border-box;
+}
+
+.card-text > .tags {
+  margin-top: auto; /* Keeps the blue 'projects' / 'tutorials' tag pinned to the bottom */
 }
 
 .card-text > * {
